@@ -1,0 +1,199 @@
+* {
+    Margin:0;
+    padding:0;
+    }
+#flex_header { 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: center;
+    align-content: space-evenly;    
+}
+
+
+#secciones {
+    flex-basis: 100px;
+    /*flex-grow: 1;*/
+    /*flex-shrink: 1;*/
+}
+
+
+
+    /*Esto lo hago para poner de fondo la imagen*/
+/* body{
+    margin: 0;
+    /*min-height: 100vh; 
+    background-image: url("/Logos\ para\ el\ Centro\ de\ Entrenamiento/imagen de fondo 4.jpg");
+    background-color: blanchedalmond;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; 
+    background-attachment: fixed;
+    /*color: rgb(211, 60, 14);
+    color: black;
+    justify-items: stretch;
+    align-items: stretch; 
+    } */
+
+    /*Esto lo agrego para que se haga traslucido el body*/
+ /* body:before { 
+    content: "";
+    height: 65%;
+    width: 100%;
+    margin-top: 130px;
+    position: absolute;
+    top: 0;
+    left: 0;    
+    background: linear-gradient(90deg,rgb(211, 60, 14),white);
+    opacity: 0.2;
+    z-index: -1; 
+    background-image: linear-gradient(to right, red , yellow);
+} */
+
+
+/* #header nav ul {
+    list-style: none;
+    }
+
+#header nav ul li{
+    display: inline-block;
+        }
+
+nav.encabezado{
+    font-size: 10px;
+    letter-spacing: 3px;
+    font-family: 'Righteous', cursive;
+    transform: translateX(85%);
+    color: rgb(211, 60, 14);
+    align-content: right;
+    margin-top: 1px;
+    top: 0px;
+    right: 0px;
+} */
+
+/* header h1#nombreCliente{
+    line-height: 1.6px;
+    letter-spacing: 5px;
+    font-size: 30px;
+    color: rgb(211, 60, 14);
+    word-spacing: 10px;
+    text-align: left;
+    font-family: 'Righteous', cursive;
+    margin-top: 30px;
+} */
+
+header h1#nombreCliente:hover{
+    color: blue;
+    letter-spacing: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transform: translate(10px, 110px);
+
+}
+
+/* img#logo{
+    max-width: 15%; ;
+    display: block;
+    margin-top: 0vh;
+    margin-left: 25vh;
+    margin-right: auto;
+    margin-bottom: 10vh;
+} */
+
+
+ul#redes{
+    font-size: 10px;
+    font-family: 'Righteous', cursive;
+    
+}
+
+h1#eslogan{
+    letter-spacing: 5px;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    font-size: 30px;
+    color: rgb(211, 60, 14);
+}
+
+div#fondoHome{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    position: relative;
+    top: 0px;
+    left: 100px;
+}
+
+/* div#videoPresentacion { Ver si tengo que llamar desde aca, el .css al scss para que funcione
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    height: 0px;
+    width: 0em;
+} */
+
+
+div#footer {
+    position: relative;
+    bottom: -100px;
+    left: 10px;
+    margin-top: 20vh;
+    color: black;
+}
+
+#formulario{
+    font-size: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 30px;
+    font-size: 13px;
+    color: black;
+    width: 50em;
+    border-color: orange;
+}
+
+p.quienesSomos {
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Righteous', cursive;
+    color: rgb(241, 14, 14);
+    letter-spacing: 2px;
+    margin-top: 10vh;
+    padding: 10vh;
+    width: 250px;
+}
+
+.gridIndex {
+    display: grid;
+    grid-template-areas: 
+    header
+    aside
+    footer;
+    grid-template-rows: auto;
+}
+
+header{
+    grid-area: header;
+}
+
+aside{
+    grid-area: aside;
+}
+
+footer{
+    grid-area: footer;
+}
+
+@media only screen and(min-width: 768px)
+{
+    .gridIndex{
+        grid-template-rows: 120px 120px 120px;
+    }
+}
+
+@media only screen and(min-width:1024px)
+{
+    .gridIndex{
+        grid-template-rows: 150px 150px 150px;
+    }
+}
+
